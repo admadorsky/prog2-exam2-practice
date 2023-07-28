@@ -53,6 +53,7 @@ Password getGeneratedPassword(fstream& infile) {
     specials = new char[num_special_chars] ;
     infile.read(specials, num_special_chars) ;
     temp.suffix = specials ;
+    delete[] specials ;
 
     return temp ;
 }
