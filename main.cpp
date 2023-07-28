@@ -186,7 +186,8 @@ int main() {
     cout << "hoody's salary: " << manager.calculate_salary() << endl ;
     cout << "nic's salary: " << clerk.calculate_salary() << endl ; */
 
-    map<string, int> map1 ;
+//    TESTING ----------------------------------------------------------------------------------------------------------
+/*    map<string, int> map1 ;
     map1.emplace("alecks", 1) ;
     map1.emplace("hoody", 2) ;
     map1.emplace("nic", 3) ;
@@ -194,6 +195,6 @@ int main() {
     i = map1.begin() ;
     for (; i != map1.end(); i++) {
         cout << i->first << ", " << i->second << endl ;
-    }
+    } */
     return 0;
 }
