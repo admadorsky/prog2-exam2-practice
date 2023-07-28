@@ -47,6 +47,8 @@ Password getGeneratedPassword(fstream& infile) {
     temp.prefix = letters ;
     delete[] letters ;
 
+    infile.read((char*)&temp.middle, 4) ;
+
     int num_special_chars = 0 ;
     infile.read((char*)&num_special_chars, 4) ;
     char* specials ;
